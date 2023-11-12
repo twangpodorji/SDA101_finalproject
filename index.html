@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>wangpo</title>
+        <link rel="stylesheet" type="text/css" href="Main.css">   
+        <style>
+body {
+    background-color: #000000 ; /* Replace with #3F6E8F your desired color code or color name */
+}
+
+
+
+/* Style the navigation menu  */
+nav {
+    /*background-color: #333; /* Background color for the menu */
+    text-align: left; /* Center-align the buttons */
+    font-size: 18px;
+    position: fixed;
+}
+
+
+
+ /*  responsiveness of the navigation button */
+nav{
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        width:100%;
+    }
+}
+
+
+
+
+/* For the navigation button/*
+/* Style the navigation links (buttons) */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+nav li {
+    display: inline;
+}
+
+
+
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #fffefe; /* Text color for the buttons */
+    /*background-color: #007bff; /* Button background color */
+    /*border: 1px solid #007bff; /* Button border */
+    border-radius: 5px; /* Add rounded corners */
+    margin: 5px; /* Adjust margin as needed */
+}
+
+
+
+
+/* Change button styles on hover (optional) */
+/*nav a:hover {
+    background-color: #CB9090; /* Change color on hover */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    overflow: hidden; /* Hide overflowing underline */
+}
+/* Add the underline effect */
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+
+                 /* THE MAIN PAGE LINKS */
+
+/* head{
+    color: black;
+} */
+.circular-image {
+    width: 350px; /* Set the width and height to create a circular container */
+    height: 350px;
+    border-radius: 80%; /* Makes the container circular */
+    overflow: hidden; /* Clips the image to the circular shape */
+    position: fixed;
+    top: 50%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    margin-left: 2%;
+}
+  
+
+
+
+.circular-image img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+  
+
+
+  /* end of the profile image in the home page */
+    /* .home-text p {
+        font-size: 50px;
+        text-align: left;
+        margin-top: 10%;
+        margin-left: 30%;
+        position: fixed; 
+        color: white;
+    } */
+
+    .home-text1 p {
+      font-size: 45px;
+      text-align: left;
+      margin-top: 13%;
+      margin-left: 30%;
+      position: fixed; 
+      color: white;
+    }
+
+    #home {
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: .15em solid rgb(6, 5, 5);
+      font-size: 45px;
+      animation: typing 3s steps(25, end);
+      display: inline-block;
+      margin-left: 42%;
+      font-weight: bolder;
+      }
+    
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 18%;
+        }
+    }
+#home_text2{
+  margin-top: 20%;
+}
+
+    
+
+
+
+    .line-home {
+        width: 100%;
+        height: 100px;
+        color: white;
+        margin-bottom: 0px;
+        margin-top: px;
+    }
+
+
+
+    .aboutme-text p {
+        color: rgb(224, 211, 211);
+        font-size: 28px;
+        text-align: left;
+        margin-top: 8%;
+        margin-left: 3%;
+        position: fixed; 
+    }
+    
+
+/* 
+    #porfile-text {
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: .15em solid rgb(6, 5, 5);
+        font-size: 45px;
+        animation: typing 3s steps(25, end);
+        display: inline-block;
+      }
+    
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 18%;
+        }
+      }
+ */
+
+
+#porfile-text {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid rgb(6, 5, 6);
+  font-size: 60px;
+  display: inline-block;
+  animation: typing 8s steps(25, end);
+  margin-top: 38%;
+  }
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+
+
+.home-profile {
+  font-size: 45px;
+  text-align: left;
+  margin-top: 1%;
+  margin-left: 35%;
+  position: fixed; 
+  color: white;
+}
+
+
+
+
+      .my-img img {
+        margin-top: 10%;
+        margin-left: 60%;
+        position: absolute;
+      }    
+
+
+
+      .prob-image img {
+        width: 30%; /* Make the image take up the entire circular container */
+        height: 30%;
+        object-fit: cover; /* Ensures the image covers the entire container */
+        margin-left: 60%;
+        margin-top: 10%;
+        position: fixed;
+      }
+      
+      /* styles.css */
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animated-picture {
+  width: 400px;
+  height: 300px;
+  margin: 100px;
+  animation: scale 3s ease-in-out;
+}
+
+.workimg img{
+  margin-left: 10%;
+  position: fixed;
+  margin-top: 0%;
+}
+
+.wotexf {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 35%;
+}
+
+.words {
+  color: rgb(224, 211, 211);
+  font-size: 28px;
+  text-align: left;
+  margin-left: 3%;
+  position: fixed; 
+  margin-top: 30%;
+}
+.b1{
+  margin-top: 12%;
+  margin-left: 13%;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.b2{
+  margin-top: 5.3%;
+  margin-left: 13%;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.b3{
+  margin-top: 5.6%;
+  margin-left: 13%;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.b1:hover{
+  background-color: #9AE77F;
+}
+.b2:hover{
+  background-color: #9AE77F;
+}
+.b3:hover{
+  background-color: #9AE77F;
+}
+        </style> 
+    </head>
+     <body>
+        <nav>
+            <ul>
+                <li><a href="Home_page.html">HOME</a></li>
+                <li><a href="About_page.html">ABOUT ME</a></li>
+                <li><a href="work.html">WORK</a></li>
+            </ul>
+        </nav> 
+        <div class="circular-image">
+            <img src="tsheri.png" alt="Circular Image">
+        </div>
+        <div class = "home-profile">
+            <p id="porfile-text" style="font-size: 55px;"> Hello,<br>
+                I am Tshering Wanpo Dorji <br> a software engineering student.
+            </p>
+        </div>
+    </body>
+</html>
+
+
+
+     
+         
+
+
+
+
+
+
+
+
+
+
+
+
+ 
